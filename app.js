@@ -15,8 +15,8 @@ app.get('/', (req,res)=> {
 //post
 app.post('/login', (req, res) => {
   // make body
-  const userid = req.body.id;
-  const userpw = req.body.pw;
+  const userid = req.body.userid;
+  const userpw = req.body.userpw;
   
   const goodid = 'csm';
   const goodpw = '0177';
