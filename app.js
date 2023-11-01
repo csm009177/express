@@ -1,15 +1,21 @@
 // import module 
 const express = require('express');
 const app = express();
-const bodyParser = require('body-parser')
 // port 
 const port = 2317;
-// 
-app.use(bodyParser.urlencoded({ extended: false }));
 
+
+// get
 app.get('/', (req,res)=> {
   res.send('hello');
 })
+//post
+const bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({ extended: false }));
+app.post('/login', (req,res)=> {
+  res.send('hello world')
+});
+
 
 app.listen(port, ()=> {
   console.log(`
