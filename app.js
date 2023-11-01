@@ -10,7 +10,7 @@ const port = 2317;
 
 // get
 app.get('/', (req,res)=> {
-  res.sendFile(__dirname +'/main.html');
+  res.sendFile(__dirname +'/index.html');
 })
 //post
 app.post('/login', (req, res) => {
@@ -22,7 +22,7 @@ app.post('/login', (req, res) => {
   const goodpw = '0177';
   
   if ( userid=== goodid && userpw === goodpw ) {
-    res.sendFile( __dirname + '/index.html');
+    res.sendFile( __dirname + '/search.html');
   } else {
     res.send('Invalid login');
   }
