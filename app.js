@@ -15,13 +15,13 @@ app.get('/', (req,res)=> {
 //post
 app.post('/login', (req, res) => {
   // make body
-  const userid = req.body.userid;
-  const userpw = req.body.userpw;
+  const userid = req.body.id;
+  const userpw = req.body.pw;
   
   const goodid = 'csm';
   const goodpw = '0177';
   
-  if ( goodid === userid&& goodpw === userpw) {
+  if ( userid=== goodid && userpw === goodpw ) {
     res.sendFile( __dirname + '/index.html');
   } else {
     res.send('Invalid login');
