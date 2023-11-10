@@ -1,7 +1,11 @@
 // import module 
-const express = require('express');
+// const express = require('express');
+// const app = express();
+// const bodyParser = require('body-parser')
+
+import { Express } from 'express';
 const app = express();
-const bodyParser = require('body-parser')
+
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
@@ -10,7 +14,7 @@ const port = 2317;
 
 // get
 app.get('/', (req,res)=> {
-  res.sendFile(__dirname +'/index.html');
+  res.sendFile(__dirname +'/doc/login.html');
 })
 //post
 app.post('/login', (req, res) => {
@@ -22,7 +26,7 @@ app.post('/login', (req, res) => {
   const goodpw = '0177';
   
   if ( userid=== goodid && userpw === goodpw ) {
-    res.sendFile( __dirname + '/search.html');
+    res.sendFile( __dirname + '/doc/index.html');
   } else {
     res.send('Invalid login');
   }

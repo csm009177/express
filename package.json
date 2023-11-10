@@ -1,5 +1,19 @@
 {
   "dependencies": {
     "express": "^4.18.2"
-  }
+  },
+  "name": "express",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",  
+  "directories": {
+    "doc": "doc"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
