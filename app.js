@@ -1,14 +1,11 @@
-// import module 
-// const express = require('express');
-// const app = express();
-// const bodyParser = require('body-parser')
-
-import { Express } from 'express';
+import http from 'http';
+import express from 'express'
+import fs from 'fs';
 const app = express();
 
+// app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(express.json());
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.json());
 // port 
 const port = 2317;
 
