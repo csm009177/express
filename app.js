@@ -5,7 +5,7 @@ const app = express();
 const port = 2317;
 
 // 정적 파일을 제공하기 위한 미들웨어 설정
-app.use(express.static('static'));
+app.use(express.static('public'));
 
 // 데이터를 파싱하기 위한 선언 
 app.use(express.urlencoded({ extended: true }));
