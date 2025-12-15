@@ -13,10 +13,10 @@ app.use(express.json())
 
 // get sendFile
 app.get('/', (req,res)=> {
-  res.sendFile('./index.html');
+  res.sendFile(__dirname + '/public/index.html');
 })
 
-app.post('/search', (req,res)=> {
+app.post('/login', (req,res)=> {
   // import id and pw
   const userId= req.body.Id;
   const userPw= req.body.Pw
